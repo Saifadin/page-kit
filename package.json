@@ -30,7 +30,6 @@
     "build": "cross-env NODE_ENV=production tsc -p tsconfig.base.json  && rollup -c && rimraf compiled && cp ./index.js ./dist/index.js",
     "build:dev": "cross-env NODE_ENV=production tsc -p tsconfig.base.json  && rollup -c && cp ./index.js ./dist/index.js",
     "prepublish": "yarn build",
-    "precommit": "lint-staged",
     "size": "size-limit",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o docs",
@@ -77,6 +76,7 @@
     "jest": "^24.8.0",
     "jest-cli": "^24.8.0",
     "lint-staged": "^8.2.0",
+    "prettier": "^1.18.2",
     "rollup": "^1.14.6",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-node-resolve": "^5.0.1",
@@ -125,5 +125,10 @@
       "path": "./dist/page-kit.esm.js",
       "limit": "14 kB"
     }
-  ]
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
 }
