@@ -1,0 +1,22 @@
+{
+  "name": "page-kit",
+  "version": "0.0.1",
+  "description": "UI-Kit to Build Websites more easily with React and Gatsby",
+  "main": "dist/index.js",
+  "module": "dist/page-kit.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "author": "Osamah Aldoaiss<osamah@aldoaiss.de>",
+  "keywords": [
+    "react",
+    "react-dom",
+    "emails",
+    "components",
+    "context",
+    "typescript",
+    "ui"
+  ],
+  "license": "MIT"
+}
