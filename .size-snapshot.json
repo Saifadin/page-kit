@@ -1,11 +1,11 @@
 {
   "dist/page-kit.cjs.production.js": {
-    "bundled": 42555,
+    "bundled": 41612,
     "minified": 30897,
     "gzipped": 5187
   },
   "dist/page-kit.cjs.development.js": {
-    "bundled": 42555,
+    "bundled": 41612,
     "minified": 30897,
     "gzipped": 5187
   },
