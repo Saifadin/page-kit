@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { HoverWrapper, BackgroundImage } from '../ImageGridTwoLargeFourSmall/styles';
-import { Wrapper, FullwidthChildWrapper, OneHalfChildWrapper } from './styles';
+import { ImageGridTwoHalfOneFullwidthWrapper, FullwidthChildWrapper, OneHalfChildWrapper } from './styles';
 
 interface GridProps {
   className?: string;
@@ -12,9 +12,9 @@ interface GridProps {
 
 export const ImageGridTwoHalfOneFullwidth: React.FC<GridProps> = ({ className = '', fullWidth = false, gap, rowHeight, children }) => {
   return (
-    <Wrapper className={className} gap={gap} rowHeight={rowHeight} fullWidth={fullWidth}>
+    <ImageGridTwoHalfOneFullwidthWrapper className={className} gap={gap} rowHeight={rowHeight} fullWidth={fullWidth}>
       {children}
-    </Wrapper>
+    </ImageGridTwoHalfOneFullwidthWrapper>
   );
 };
 

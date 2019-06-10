@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Wrapper, Background, HeroContent, Title, SubTitle } from './styles';
+import { HeroWrapper, Background, HeroContent, HeroTitle, HeroSubTitle } from './styles';
 
 interface HeroType {
   title?: React.ReactNode;
@@ -32,16 +32,16 @@ export const Hero: React.FunctionComponent<HeroType> = ({
   contentPosition = 'center-center',
 }) => {
   return (
-    <Wrapper height={height} fullWidth={fullWidth} contentPosition={contentPosition} hasMargin={hasMargin}>
+    <HeroWrapper height={height} fullWidth={fullWidth} contentPosition={contentPosition} hasMargin={hasMargin}>
       <Background>{background}</Background>
       <HeroContent contentPosition={contentPosition}>
         {children || (
           <React.Fragment>
-            {title ? <Title>{title}</Title> : null}
-            {subTitle ? <SubTitle>{subTitle}</SubTitle> : null}
+            {title ? <HeroTitle>{title}</HeroTitle> : null}
+            {subTitle ? <HeroSubTitle>{subTitle}</HeroSubTitle> : null}
           </React.Fragment>
         )}
       </HeroContent>
-    </Wrapper>
+    </HeroWrapper>
   );
 };

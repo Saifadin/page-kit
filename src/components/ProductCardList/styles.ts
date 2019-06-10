@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 import { layout } from '../tokens';
 
-export const CardList = styled.div`
+export const CardListWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: ${layout.spacing * 2}px;

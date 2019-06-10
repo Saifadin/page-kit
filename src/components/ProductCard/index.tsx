@@ -1,7 +1,7 @@
 import React from 'react';
 
-import CardImage from './CardImage';
-import { Card, ProductDetails, ProductTitle, ProductPrice } from './styles';
+import ProductCardImage from './CardImage';
+import { ProductCardWrapper, ProductDetails, ProductTitle, ProductPrice } from './styles';
 
 interface Product {
   title: string;
@@ -36,12 +36,12 @@ export const ProductCard: React.FunctionComponent<ProductCard> = ({ product }) =
   }).format(parseFloat(minVariantPrice.amount));
 
   return (
-    <Card to={`/product/${handle}`}>
-      <CardImage images={product.images} title={product.title} />
+    <ProductCardWrapper to={`/product/${handle}`}>
+      <ProductCardImage images={product.images} title={product.title} />
       <ProductDetails>
         <ProductTitle>{product.title}</ProductTitle>
         <ProductPrice>{`${isMinimum ? 'from ' : ''}${price}`}</ProductPrice>
       </ProductDetails>
-    </Card>
+    </ProductCardWrapper>
   );
 };

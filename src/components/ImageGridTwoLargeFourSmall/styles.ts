@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import Img from 'gatsby-image';
 import { colors } from '../tokens';
 
-interface WrapperProps {
+interface ImageGridTwoLargeFourSmallWrapperProps {
   gap?: string;
   rowHeight?: number;
   className?: string;
@@ -10,7 +10,7 @@ interface WrapperProps {
   fullWidth: boolean;
 }
 
-export const Wrapper = styled.div<WrapperProps>`
+export const ImageGridTwoLargeFourSmallWrapper = styled.div<ImageGridTwoLargeFourSmallWrapperProps>`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, 100vw);

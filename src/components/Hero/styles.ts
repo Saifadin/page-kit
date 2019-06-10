@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { layout } from '../tokens';
 
-interface WrapperProps {
+interface HeroWrapperProps {
   height?: string;
   fullWidth?: boolean;
   hasMargin?: boolean;
@@ -17,14 +17,14 @@ interface WrapperProps {
     | 'bottom-right';
 }
 
-export const Wrapper = styled.div<WrapperProps>`
+export const HeroWrapper = styled.div<HeroWrapperProps>`
   display: flex;
   position: relative;
   width: 100%;
   padding: ${layout.spacing * 5}px;
   z-index: 2;
   ${({ fullWidth }) => {
-    return fullWidth
+    return !fullWidth
       ? `
       max-width: 1200px;
       margin: 0 auto;
@@ -84,9 +84,9 @@ export const HeroContent = styled.div<ContentProps>`
     return `text-align: center; align-items: center;`;
   }};
 `;
-export const Title = styled.h2`
+export const HeroTitle = styled.h2`
   margin: 0;
 `;
-export const SubTitle = styled.h3`
+export const HeroSubTitle = styled.h3`
   margin: 0;
 `;

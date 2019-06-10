@@ -8,7 +8,7 @@ interface WrapperProps {
   fullWidth: boolean;
 }
 
-export const Wrapper = styled.div<WrapperProps>`
+export const ImageGridTwoHalfOneFullwidthWrapper = styled.div<WrapperProps>`
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: ${({ rowHeight }: any) => (rowHeight ? `${rowHeight}px` : '50vh')};

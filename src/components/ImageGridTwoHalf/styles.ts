@@ -8,7 +8,7 @@ interface WrapperProps {
   fullWidth: boolean;
 }
 
-export const Wrapper = styled.div<WrapperProps>`
+export const ImageGridTwoHalfWrapper = styled.div<WrapperProps>`
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: ${({ gap }: any) => gap || ''};

@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 
 import { layout } from '../tokens';
 
-export const Card = styled(Link)`
+export const ProductCardWrapper = styled(Link)`
   overflow: hidden;
   display: block;
   width: 144px;

@@ -1,18 +1,18 @@
 {
   "dist/page-kit.cjs.production.js": {
-    "bundled": 41421,
-    "minified": 30707,
-    "gzipped": 5183
+    "bundled": 42555,
+    "minified": 30897,
+    "gzipped": 5187
   },
   "dist/page-kit.cjs.development.js": {
-    "bundled": 41421,
-    "minified": 30707,
-    "gzipped": 5183
+    "bundled": 42555,
+    "minified": 30897,
+    "gzipped": 5187
   },
   "dist/page-kit.esm.js": {
-    "bundled": 40750,
-    "minified": 29182,
-    "gzipped": 4988,
+    "bundled": 40929,
+    "minified": 29360,
+    "gzipped": 4991,
     "treeshaked": {
       "rollup": {
         "code": 144,

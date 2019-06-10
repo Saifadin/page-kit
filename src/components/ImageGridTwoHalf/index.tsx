@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Wrapper } from './styles';
+import { ImageGridTwoHalfWrapper } from './styles';
 
 interface GridProps {
   className?: string;
@@ -11,8 +11,8 @@ interface GridProps {
 
 export const ImageGridTwoHalf: React.FC<GridProps> = ({ className = '', fullWidth = false, gap, rowHeight, children }) => {
   return (
-    <Wrapper className={className} gap={gap} rowHeight={rowHeight} fullWidth={fullWidth}>
+    <ImageGridTwoHalfWrapper className={className} gap={gap} rowHeight={rowHeight} fullWidth={fullWidth}>
       {children}
-    </Wrapper>
+    </ImageGridTwoHalfWrapper>
   );
 };

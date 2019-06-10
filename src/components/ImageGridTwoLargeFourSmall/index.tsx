@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Wrapper, LargeChildWrapper, SmallChildWrapper, BackgroundImage, HoverWrapper } from './styles';
+import { ImageGridTwoLargeFourSmallWrapper, LargeChildWrapper, SmallChildWrapper, BackgroundImage, HoverWrapper } from './styles';
 
 interface GridProps {
   className?: string;
@@ -11,9 +11,9 @@ interface GridProps {
 
 export const ImageGridTwoLargeFourSmall: React.FC<GridProps> = ({ className = '', fullWidth = false, gap, rowHeight, children }) => {
   return (
-    <Wrapper className={className} gap={gap} rowHeight={rowHeight} fullWidth={fullWidth}>
+    <ImageGridTwoLargeFourSmallWrapper className={className} gap={gap} rowHeight={rowHeight} fullWidth={fullWidth}>
       {children}
-    </Wrapper>
+    </ImageGridTwoLargeFourSmallWrapper>
   );
 };
 

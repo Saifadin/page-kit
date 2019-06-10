@@ -1,7 +1,7 @@
 import React from 'react';
 import find from 'lodash/find';
 
-import { CardList } from './styles';
+import { CardListWrapper } from './styles';
 import { ProductCard } from '../ProductCard';
 
 interface ProductCardListType {
@@ -13,7 +13,7 @@ interface ProductCardListType {
 
 export const ProductCardList: React.FC<ProductCardListType> = ({ products, handles, tag, className }) => {
   return (
-    <CardList className={className}>
+    <CardListWrapper className={className}>
       {handles
         ? handles.map(handle => {
             const product = find(products, ({ node }) => handle === node.handle);
@@ -21,6 +21,6 @@ export const ProductCardList: React.FC<ProductCardListType> = ({ products, handl
             return null;
           })
         : tag}
-    </CardList>
+    </CardListWrapper>
   );
 };
