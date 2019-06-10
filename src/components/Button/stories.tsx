@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 // @ts-ignore
 import { action } from '@storybook/addon-actions';
 
-import Button from './index';
+import { Button } from './index';
 
 storiesOf('Button', module)
   .add('light', () => <Button onClick={action('clicked')}>Light Button</Button>)
