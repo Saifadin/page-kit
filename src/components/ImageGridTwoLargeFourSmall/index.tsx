@@ -9,7 +9,7 @@ interface GridProps {
   fullWidth?: boolean;
 }
 
-const ImageGridTwoLargeFourSmall: React.FC<GridProps> = ({ className = '', fullWidth = false, gap, rowHeight, children }) => {
+export const ImageGridTwoLargeFourSmall: React.FC<GridProps> = ({ className = '', fullWidth = false, gap, rowHeight, children }) => {
   return (
     <Wrapper className={className} gap={gap} rowHeight={rowHeight} fullWidth={fullWidth}>
       {children}
@@ -95,5 +95,3 @@ export const SmallChild: React.FC<ChildProps> = ({
     </SmallChildWrapper>
   );
 };
-
-export default ImageGridTwoLargeFourSmall;

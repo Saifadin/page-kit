@@ -10,7 +10,7 @@ interface GridProps {
   fullWidth?: boolean;
 }
 
-const ImageGridTwoHalfOneFullwidth: React.FC<GridProps> = ({ className = '', fullWidth = false, gap, rowHeight, children }) => {
+export const ImageGridTwoHalfOneFullwidth: React.FC<GridProps> = ({ className = '', fullWidth = false, gap, rowHeight, children }) => {
   return (
     <Wrapper className={className} gap={gap} rowHeight={rowHeight} fullWidth={fullWidth}>
       {children}
@@ -99,5 +99,3 @@ export const OneHalfChild: React.FC<ChildProps> = ({
     </OneHalfChildWrapper>
   );
 };
-
-export default ImageGridTwoHalfOneFullwidth;

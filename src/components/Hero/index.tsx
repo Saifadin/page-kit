@@ -21,7 +21,7 @@ interface HeroType {
     | 'bottom-right';
 }
 
-const Hero: React.FunctionComponent<HeroType> = ({
+export const Hero: React.FunctionComponent<HeroType> = ({
   title = 'Best Shop',
   subTitle = 'Shop for the best quality here',
   background,
@@ -45,5 +45,3 @@ const Hero: React.FunctionComponent<HeroType> = ({
     </Wrapper>
   );
 };
-
-export default Hero;

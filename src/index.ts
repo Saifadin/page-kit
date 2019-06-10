@@ -1,19 +1,19 @@
-export { default as Button, ButtonLink } from './components/Button';
+export * from './components/Button';
 
-export { default as EqualColumns } from './components/EqualColumns';
-export { default as EqualColumn } from './components/EqualColumns/EqualColumn';
+export * from './components/EqualColumns';
+export * from './components/EqualColumns/EqualColumn';
 
-export { default as Hero } from './components/Hero';
+export * from './components/Hero';
 
-export { default as ImageGridTwoHalf } from './components/ImageGridTwoHalf';
-export { default as ImageGridTwoHalfOneFullwidth, FullwidthChild, OneHalfChild } from './components/ImageGridTwoHalfOneFullwidth';
-export { default as ImageGridTwoLargeFourSmall, LargeChild, SmallChild } from './components/ImageGridTwoLargeFourSmall';
+export * from './components/ImageGridTwoHalf';
+export * from './components/ImageGridTwoHalfOneFullwidth';
+export * from './components/ImageGridTwoLargeFourSmall';
 
-export { default as ProductCardList } from './components/ProductCardList';
+export * from './components/ProductCardList';
 
-export { default as Section, SectionDescription, SectionTitle, SectionSubTitle } from './components/Section';
+export * from './components/Section';
 
-export { PrimaryTitle, SecondaryTitle, SubTitle, Paragraph } from './components/Typography';
+export * from './components/Typography';
 
 export { useMedia, useMediaLayout } from './hooks/useMedia';
 

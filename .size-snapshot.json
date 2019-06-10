@@ -1,25 +1,25 @@
 {
   "dist/page-kit.cjs.production.js": {
-    "bundled": 41434,
-    "minified": 30715,
-    "gzipped": 5198
+    "bundled": 42160,
+    "minified": 30707,
+    "gzipped": 5183
   },
   "dist/page-kit.cjs.development.js": {
-    "bundled": 41434,
-    "minified": 30715,
-    "gzipped": 5198
+    "bundled": 42160,
+    "minified": 30707,
+    "gzipped": 5183
   },
   "dist/page-kit.esm.js": {
-    "bundled": 40788,
-    "minified": 29200,
-    "gzipped": 5008,
+    "bundled": 40750,
+    "minified": 29182,
+    "gzipped": 4988,
     "treeshaked": {
       "rollup": {
         "code": 144,
         "import_statements": 144
       },
       "webpack": {
-        "code": 16342
+        "code": 15639
       }
     }
   }

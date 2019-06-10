@@ -23,7 +23,7 @@ interface ProductCard {
   product: Product;
 }
 
-const ProductCard: React.FunctionComponent<ProductCard> = ({ product }) => {
+export const ProductCard: React.FunctionComponent<ProductCard> = ({ product }) => {
   const {
     handle,
     priceRange: { minVariantPrice, maxVariantPrice },
@@ -45,5 +45,3 @@ const ProductCard: React.FunctionComponent<ProductCard> = ({ product }) => {
     </Card>
   );
 };
-
-export default ProductCard;

@@ -6,7 +6,7 @@ interface WrapperProps {
   background?: string;
 }
 
-export const Wrapper = styled.div<WrapperProps>`
+export const EqualColumnsWrapper = styled.div<WrapperProps>`
   display: flex;
   flex-direction: column;
   justify-content: space-around;

@@ -8,7 +8,7 @@ export interface ButtonProps {
   as: React.ReactNode;
 }
 
-export const Button = styled('button', { shouldForwardProp: isPropValid })<ButtonProps>`
+export const ButtonWrapper = styled('button', { shouldForwardProp: isPropValid })<ButtonProps>`
   position: relative;
   appearance: none;
   background: transparent;

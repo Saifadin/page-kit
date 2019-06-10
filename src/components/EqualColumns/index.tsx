@@ -1,12 +1,11 @@
 import React from 'react';
-import { Wrapper } from './styles';
+
+import { EqualColumnsWrapper } from './styles';
 
 interface EqualColumnsProps {
   background?: string;
 }
 
-const EqualColumns: React.FC<EqualColumnsProps> = ({ children, background }) => {
-  return <Wrapper background={background}>{children}</Wrapper>;
+export const EqualColumns: React.FC<EqualColumnsProps> = ({ children, background }) => {
+  return <EqualColumnsWrapper background={background}>{children}</EqualColumnsWrapper>;
 };
-
-export default EqualColumns;
